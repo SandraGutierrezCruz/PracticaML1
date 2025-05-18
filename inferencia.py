@@ -3,7 +3,7 @@ import pandas as pd
 
 # 1. Cargar los objetos guardados
 with open('modelo_y_tratamientos.pkl', 'rb') as f:
-    objetos = pickle.load("modelo_y_tratamientos.pkl", 'rb')
+    objetos = pickle.load(f)
 
 modelo = objetos['modelo']
 selector_varianza = objetos['selector_varianza']
